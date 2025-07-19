@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/orderDetailsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order Details"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:textColor="@android:color/black"/>
+
+    <!-- Dynamic items will be added here in code -->
+
+    <TextView
+        android:id="@+id/tvFinalTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Amount = ₹0"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:textColor="@android:color/black"/>
+</LinearLayout>

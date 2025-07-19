@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">FoodWheels</string>
+    <string name="terms_of_service">📜 Last Updated: 16th March 2025
+                Welcome to FoodWheels! By using our platform, you agree to these Terms and Conditions.\n\n
+
+                🔹 1. Acceptance of Terms\n
+                - Using this app means accepting all terms.\n
+                - If you disagree, please do not use the service.\n\n
+
+                🔹 2. User Eligibility\n
+                - Users must be 18+ or have parental permission.\n
+                - Provide accurate information for account registration.\n\n
+
+                🔹 3. Account Security\n
+                - Maintain the confidentiality of login credentials.\n
+                - Report unauthorized access immediately.\n\n
+
+                🔹 4. Orders and  Payment\n
+                - Orders are final and cannot be canceled once confirmed.\n
+                - Payments must be made via approved methods.\n\n
+
+                🔹 5. Delivery and Pickup\n
+                - Delivery times are estimates only.\n
+                - Provide an accurate address for delivery.\n\n
+
+                🔹 6. Cancellation and Refund Policy\n
+                - Refunds will be issued for incorrect or missing items.\n
+                - Refunds will be processed within 5-7 business days.\n\n
+
+                🔹 7. User Responsibilities\n
+                - No misuse of the app for illegal activities.\n
+                - Abusive behavior will result in account suspension.\n\n
+
+                🔹 8. Privacy and Data Protection\n
+                - User data is collected for order fulfillment only.\n
+                - No sharing of personal information without consent.\n\n
+
+                🔹 9. Contact Support\n
+                - Email: support@foodwheels.com\n
+
+
+
+                By using this app, you acknowledge that you have read and agree to these Terms and Conditions."</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+
+</resources>

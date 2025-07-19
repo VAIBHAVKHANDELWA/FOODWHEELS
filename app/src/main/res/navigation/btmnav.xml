@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btmnav"
+    app:startDestination="@id/Homefragment">
+
+    <fragment
+        android:id="@+id/Homefragment"
+        android:name="com.example.foodwheels.homefragment"
+        android:label="fragment_homefragment"
+        tools:layout="@layout/fragment_homefragment" />
+    <fragment
+        android:id="@+id/Cartfragment"
+        android:name="com.example.foodwheels.cartfragment"
+        android:label="fragment_cartfragment"
+        tools:layout="@layout/fragment_cartfragment" />
+    <fragment
+        android:id="@+id/Historyfragment"
+        android:name="com.example.foodwheels.historyfragment"
+        android:label="fragment_historyfragment"
+        tools:layout="@layout/fragment_historyfragment" />
+    <fragment
+        android:id="@+id/Searchfragment"
+        android:name="com.example.foodwheels.searchfragment"
+        android:label="fragment_searchfragment"
+        tools:layout="@layout/fragment_searchfragment" />
+    <fragment
+        android:id="@+id/Profilefragment"
+        android:name="com.example.foodwheels.profilefragment"
+        android:label="fragment_profilefragment"
+        tools:layout="@layout/fragment_profilefragment" />
+
+</navigation>

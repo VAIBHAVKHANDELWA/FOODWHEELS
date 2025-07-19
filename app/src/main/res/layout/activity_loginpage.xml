@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".loginpage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="65dp"
+            android:src="@drawable/img_2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOODWHEELS"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/txt"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bringing Flavours to Your Door"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foodie Cravings Login"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:gravity="center" />
+
+        <!-- Email Input -->
+        <EditText
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextstyle"
+            android:textSize="18sp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="22dp"
+            android:padding="12dp"
+            android:id="@+id/email"
+            android:hint="Enter a Valid Email"
+            android:textColorHint="#888888"
+
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="22dp"
+            android:textColor="#000000" />
+
+        <!-- Password Input -->
+        <EditText
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextstyle"
+            android:textSize="18sp"
+            android:inputType="textPassword"
+            android:layout_marginTop="15dp"
+            android:padding="12dp"
+            android:hint="Enter Password"
+            android:textColorHint="#888888"
+  android:id="@+id/password"
+            android:drawableStart="@drawable/ic_pass"
+            android:drawablePadding="12dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="17dp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue With"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="2dp"
+            android:gravity="center" />
+
+        <!-- Google & Facebook Buttons in a single line -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:text="Google"
+                android:textColor="#3E3C3C"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/googlelogin"
+                android:drawableStart="@drawable/ic_google"
+               android:elevation="180dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:drawablePadding="8dp"
+                android:gravity="center" />
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:text="Facebook"
+                android:textColor="#3E3C3C"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:elevation="180dp"
+                android:id="@+id/fblogin"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:drawableStart="@drawable/ic_facebook"
+                android:drawablePadding="8dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Login Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button"
+            android:text="Login"
+            android:textColor="#3E3C3C"
+             android:id="@+id/loginbtn"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Signup Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Sign Up"
+            android:textSize="14sp"
+            android:id="@+id/txtsignup"
+            android:textColor="@color/black"
+            android:shadowColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".searchfragment">
+
+    <!-- Search Title -->
+    <TextView
+        android:id="@+id/searchtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:text="@string/search" />
+
+    <!-- Search Bar -->
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:iconifiedByDefault="false"
+        android:layout_below="@id/searchtext"
+        android:background="@drawable/edittextstyle"
+        android:queryBackground="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:queryHint="What Do you Want To Eat?"
+        android:theme="@style/CustomSearchView"
+    />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchView"
+        android:layout_marginTop="8dp"/>
+</RelativeLayout>

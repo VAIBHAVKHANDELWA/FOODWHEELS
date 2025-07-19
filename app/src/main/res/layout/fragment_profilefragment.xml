@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Profile Image Section -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/user_icon"
+            android:scaleType="centerCrop"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp" />
+
+
+        <!-- Name Input Field -->
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittextstyle"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Email Input Field -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:background="@drawable/edittextstyle"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Address Input Field -->
+        <EditText
+            android:id="@+id/addressInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Delivery Address"
+            android:inputType="textMultiLine"
+            android:textColor="@color/black"
+            android:background="@drawable/edittextstyle"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Phone Number Input Field -->
+        <EditText
+            android:id="@+id/phoneInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:background="@drawable/edittextstyle"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Save Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Profile"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

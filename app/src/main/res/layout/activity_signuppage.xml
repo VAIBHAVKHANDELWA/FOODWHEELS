@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".signuppage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="65dp"
+                android:src="@drawable/img_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FOODWHEELS"
+                android:textSize="21sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/txt"
+                android:layout_marginTop="10dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bringing Flavours to Your Door"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:gravity="center" />
+
+            <!-- Name Input -->
+            <EditText
+                android:layout_width="335dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittextstyle"
+                android:textSize="18sp"
+                android:inputType="text"
+                android:layout_marginTop="22dp"
+                android:padding="12dp"
+                android:id="@+id/name"
+                android:hint="Enter your name"
+                android:textColorHint="#888888"
+                android:drawableStart="@drawable/user_svgrepo_com"
+                android:drawablePadding="22dp"
+                android:textColor="#000000" />
+
+            <!-- Email Input -->
+            <EditText
+                android:layout_width="335dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittextstyle"
+                android:textSize="18sp"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="22dp"
+                android:padding="12dp"
+                android:hint="Enter a Valid Email"
+                android:id="@+id/email"
+                android:textColorHint="#888888"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="22dp"
+                android:textColor="#000000" />
+
+            <!-- Password Input -->
+            <EditText
+                android:layout_width="335dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittextstyle"
+                android:textSize="18sp"
+                android:inputType="textPassword"
+                android:layout_marginTop="15dp"
+                android:padding="12dp"
+                android:hint="Enter Password"
+                android:id="@+id/password"
+                android:textColorHint="#888888"
+                android:drawableStart="@drawable/ic_pass"
+                android:drawablePadding="12dp"
+                android:textColor="#000000" />
+
+            <!-- Signup Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:id="@+id/signup"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/button"
+                android:text="Create Account"
+                android:textColor="#3E3C3C"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Signin Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already Have An Account?"
+                android:textSize="14sp"
+                android:id="@+id/signin"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".historyfragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Recent Buys"
+        android:textStyle="bold"
+        android:id="@+id/txtt"
+        android:background="@drawable/edittextstyle"
+        android:layout_margin="8dp"
+        android:textSize="16sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="6dp"
+        android:layout_below="@id/txtt"
+        app:cardBackgroundColor="@color/white"
+        android:id="@+id/ccv"
+        android:layout_centerInParent="true"
+        android:outlineSpotShadowColor="@color/black"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/shahee"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imgv"
+                android:gravity="center"
+                android:layout_marginLeft="60dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Name"
+                    android:id="@+id/foodname"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/price"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <!-- Order Status Indicator -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_check_green" />
+
+                <TextView
+                    android:id="@+id/order_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivered"
+                    android:textStyle="bold"
+                    android:textColor="#76D67A"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="4dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Previous Buys"
+        android:background="@drawable/edittextstyle"
+        android:layout_marginLeft="8dp"
+        android:textStyle="bold"
+        android:id="@+id/txttv"
+        android:layout_below="@id/ccv"
+        android:layout_marginTop="25dp"
+        android:textSize="16sp"/>
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/txttv"
+          android:id="@+id/recycleview"
+          tools:listitem="@layout/recycle3view"
+          android:layout_marginTop="10dp"/>
+</RelativeLayout>

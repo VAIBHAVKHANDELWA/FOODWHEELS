@@ -1,0 +1,50 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order Details"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:paddingBottom="8dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvOrderQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantity: 2"
+        android:textSize="16sp"
+        android:textColor="#444444"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvOrderAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Amount: ₹500"
+        android:textSize="16sp"
+        android:textColor="#444444"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnCloseBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#000000"
+        android:padding="8dp" />
+</LinearLayout>

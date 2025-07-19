@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".itemdetails"
+    android:padding="15dp">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_arrow"
+        android:id="@+id/imgbtn"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food name"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txttt"
+        />
+     <ImageView
+         android:layout_width="270dp"
+         android:layout_height="270dp"
+         android:layout_centerHorizontal="true"
+         android:layout_below="@id/txttt"
+
+         android:src="@drawable/bahji"
+         android:id="@+id/ttt"
+         android:layout_marginTop="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Description"
+        android:textSize="20dp"
+        android:textStyle="bold"
+android:textColor="@color/black"
+        android:layout_below="@id/ttt"
+        android:id="@+id/txttt1"
+        android:layout_marginTop="25dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txttt1"
+        android:textColor="@color/black"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        android:id="@+id/t1t1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingridients"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        android:layout_below="@id/t1t1"
+        android:id="@+id/txttt2"
+        android:layout_marginTop="25dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txttt2"
+        android:textColor="@color/black"
+        android:text="Lorem ipsum dolor sit amet,  Ut enim ad minim veniam, aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        android:id="@+id/t1t2"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+       android:layout_below="@id/t1t2"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Add to Cart"
+        android:textAllCaps="false"
+        android:id="@+id/btn"
+        android:background="@drawable/button"/>
+</RelativeLayout>

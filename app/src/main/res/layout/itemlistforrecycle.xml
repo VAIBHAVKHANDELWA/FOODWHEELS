@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10.5dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="390dp"
+        android:layout_height="72dp"
+        android:backgroundTint="#F0F6F0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:elevation="20dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/item_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:src="@drawable/ic_launcher_background"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹999"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/add_to_cart"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:text="Add to Cart"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:paddingStart="5dp"
+                android:background="@drawable/button"
+
+                android:layout_alignEnd="@id/item_price"
+                android:layout_below="@id/item_price"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/item_image"
+                android:layout_toStartOf="@id/item_price"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:paddingEnd="10dp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

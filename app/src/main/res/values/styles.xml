@@ -1,0 +1,13 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!-- ... other theme attributes ... -->
+    </style>
+
+    <style name="CustomSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:editTextColor">@color/black</item>  <!-- Set the text color here -->
+        <!-- You can customize other things like hint text color here too, if needed -->
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+</resources>

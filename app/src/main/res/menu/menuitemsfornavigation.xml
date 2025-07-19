@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Homefragment"
+        android:icon="@drawable/homeicon"
+        android:title="Home"
+        android:tooltipText="Home"/>
+    <item android:id="@+id/Cartfragment"
+        android:icon="@drawable/carticon"
+        android:title="Cart"/>
+    <item android:id="@+id/Searchfragment"
+        android:icon="@drawable/search_svgrepo_com"
+        android:title="Search"/>
+    <item android:id="@+id/Historyfragment"
+        android:icon="@drawable/historyicon"
+        android:title="History"/>
+    <item android:id="@+id/Profilefragment"
+        android:icon="@drawable/profileicon"
+        android:title="Profile"/>
+</menu>

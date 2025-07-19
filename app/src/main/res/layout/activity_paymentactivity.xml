@@ -1,0 +1,192 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity"
+    android:background="#F9F9F9">
+
+    <!-- Google MapView Background -->
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/white" />
+
+    <!-- Back Button (ImageButton) overlapping MapView -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:src="@drawable/back_arrow"
+        app:tint="@color/black"
+        android:contentDescription="Back" />
+
+    <!-- White Overlay for better text visibility -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#AAFFFFFF"/>
+
+    <!-- User Input Fields Section -->
+    <LinearLayout
+        android:id="@+id/userDetailsSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mapView"
+        android:orientation="vertical"
+        android:padding="1dp"
+        android:background="@android:color/white"
+        android:elevation="3dp">
+
+        <!-- Name Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/editstyle">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/user_icon"
+                android:layout_marginEnd="10dp"
+                app:tint="@color/black" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your name"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:background="@null"
+                android:padding="4dp"/>
+        </LinearLayout>
+
+        <!-- Phone Number Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/editstyle">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/phone_call_svgrepo_com"
+                android:layout_marginEnd="10dp"
+                app:tint="@color/black" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter phone number"
+                android:inputType="phone"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:background="@null"
+                android:padding="4dp"/>
+        </LinearLayout>
+
+        <!-- Address Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/editstyle">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/location_svgrepo_com"
+                android:layout_marginEnd="10dp"
+                app:tint="@color/black" />
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter delivery address"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:background="@null"
+                android:padding="4dp"/>
+        </LinearLayout>
+
+        <!-- View Order Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/editstyle">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/food"
+                android:layout_marginEnd="10dp"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/tvOrderDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View order details"
+                android:textSize="16sp"
+                android:textColor="#777777"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+
+        <!-- Payment Mode Selection -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Payment Mode"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingTop="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerPaymentMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:background="@android:color/white"/>
+    </LinearLayout>
+
+    <!-- Floating Payment Button -->
+    <Button
+        android:id="@+id/btnProceedToPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed to Payment"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:elevation="4dp"/>
+</RelativeLayout>

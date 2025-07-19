@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="6dp"
+        app:cardBackgroundColor="@color/white"
+        android:id="@+id/ccv"
+        android:layout_centerHorizontal="true"
+        android:outlineSpotShadowColor="@color/black"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/pizza"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imgv"
+                android:gravity="center"
+                android:layout_marginLeft="60dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Name"
+                    android:id="@+id/foodnames"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/prices"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <!-- Order Again Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_order_again"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:text="Order Again"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:backgroundTint="#76D67A"
+                app:cornerRadius="8dp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

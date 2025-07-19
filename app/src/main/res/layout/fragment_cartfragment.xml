@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cartfragment"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appetite Approved! Let’s Checkout"
+        android:textColor="@color/black"
+        android:id="@+id/textview1"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/textview1"
+        android:layout_marginTop="12dp"
+        android:paddingBottom="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+<androidx.appcompat.widget.AppCompatButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/btnplaceorder"
+    android:background="@drawable/edittextstyle"
+    android:text="Proceed Further to place order"
+    android:textColor="@color/black"
+    android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/emptyCartMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No items in cart"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/emptyCartImage"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:id="@+id/emptyCartImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/empty_cart"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>
