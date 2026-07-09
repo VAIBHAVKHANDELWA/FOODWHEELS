@@ -119,6 +119,45 @@ This project strengthened understanding of:
 
 ---
 
+
+## 📱 Application Preview
+
+<p align="center">
+  <a href="assets/115644.jpg">
+    <img src="assets/115644.jpg" width="220" alt="Screenshot 1"/>
+  </a>
+  <a href="assets/115645.jpg">
+    <img src="assets/115645.jpg" width="220" alt="Screenshot 2"/>
+  </a>
+  <a href="assets/115646.jpg">
+    <img src="assets/115646.jpg" width="220" alt="Screenshot 3"/>
+  </a>
+</p>
+
+<p align="center">
+  <a href="assets/115647.jpg">
+    <img src="assets/115647.jpg" width="220" alt="Screenshot 4"/>
+  </a>
+  <a href="assets/115648.jpg">
+    <img src="assets/115648.jpg" width="220" alt="Screenshot 5"/>
+  </a>
+  <a href="assets/115649.jpg">
+    <img src="assets/115649.jpg" width="220" alt="Screenshot 6"/>
+  </a>
+</p>
+
+<p align="center">
+  <a href="assets/115650.jpg">
+    <img src="assets/115650.jpg" width="220" alt="Screenshot 7"/>
+  </a>
+</p>
+
+<p align="center">
+  <i>Click any screenshot to view it in full resolution.</i>
+</p>
+
+
+---
 # 👨‍💻 Author
 
 ### Vaibhav Khandelwal
